@@ -1,0 +1,31 @@
+Files already downloaded and verified
+PRID2011SEQUENCE dataset loaded
+  subset   | # ids | # sequences
+  ---------------------------
+  train    |    99 |     4545
+  val      |     1 |       35
+  trainval |   100 |     4580
+  query    |   100 |      100
+  gallery  |   100 |      100
+<class 'torch.nn.modules.container.Sequential'>
+Test:
+=> Loaded checkpoint '/home/ying/Desktop/SCAN/logs/cnnmodel_best.pth.tar'
+=> Loaded checkpoint '/home/ying/Desktop/SCAN/logs/attmodel_best.pth.tar'
+=> Loaded checkpoint '/home/ying/Desktop/SCAN/logs/clsmodel_best.pth.tar'
+Extract Features: [50/359]	Time 0.092 (0.117)	Data 0.000 (0.007)	
+Extract Features: [100/359]	Time 0.093 (0.105)	Data 0.000 (0.004)	
+Extract Features: [150/359]	Time 0.092 (0.101)	Data 0.000 (0.002)	
+Extract Features: [200/359]	Time 0.094 (0.099)	Data 0.000 (0.002)	
+Extract Features: [250/359]	Time 0.095 (0.098)	Data 0.000 (0.001)	
+Extract Features: [300/359]	Time 0.095 (0.098)	Data 0.000 (0.001)	
+Extract Features: [350/359]	Time 0.092 (0.097)	Data 0.000 (0.001)	
+Extract Features: [50/241]	Time 0.094 (0.099)	Data 0.000 (0.010)	
+Extract Features: [100/241]	Time 0.096 (0.096)	Data 0.000 (0.005)	
+Extract Features: [150/241]	Time 0.092 (0.095)	Data 0.000 (0.003)	
+Extract Features: [200/241]	Time 0.093 (0.095)	Data 0.000 (0.002)	
+Mean AP: 98.0%
+CMC Scores    allshots      cuhk03  market1501
+  top-1          97.0%       97.0%       97.0%
+  top-5          99.0%       99.0%       99.0%
+  top-10         99.0%       99.0%       99.0%
+  top-20         99.0%       99.0%       99.0%
