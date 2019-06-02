@@ -3,7 +3,7 @@ The official code for SCAN is [here](https://github.com/ruixuejianfei/SCAN).
 
 The Optical Flow datasets for ilids and prid2011 are not avaliable, you should generate it by yourself,or you can choose don't use the Optical flow.
 
-You can get optical_flow data for ilids_vid in here https://drive.google.com/open?id=1u9jMd9wmmW25fAKGTRWg6pPRJtemcp4v,which is provided by https://github.com/dapengchen123/video_reid.
+You can get optical_flow data for ilids_vid in here https://drive.google.com/open?id=1u9jMd9wmmW25fAKGTRWg6pPRJtemcp4v, which is provided by https://github.com/dapengchen123/video_reid.
 
 Don't forget change the optical_flow data name to make sure it's same as in **ilidsvidsequence.py** or **prid2011sequence.py**.
 
