@@ -70,7 +70,7 @@ class ResNet(nn.Module):
         seq_len = img_size[1]  # 8
         imgs = imgs.view(-1, img_size[2], img_size[3], img_size[4])  # torch.Size([64, 3, 256, 128])
         motions = motions.view(-1, motion_size[2], motion_size[3], motion_size[4])
-        motions = motions[:, 0:3]  # torch.Size([64, 3, 256, 128])
+        motions = motions[:, 1:3]  # torch.Size([64, 2, 256, 128])
 
         for name, module in self.base._modules.items():
             if name == 'conv1':
