@@ -46,7 +46,7 @@ class Classifier(nn.Module):
             p_size, g_size = pg_size[0], pg_size[1]  # 4, 4
             diff = diff.view(p_size * g_size, -1)  # torch.Size([16, 128])
             diff = diff.contiguous()
-            # diff = self.classifierBN(diff)
+            diff = self.classifierBN(diff)
             if self.drop > 0:
                 diff = self.droplayer(diff)
             cls_encode = self.classifierlinear(diff)  # torch.Size([16, 2])
