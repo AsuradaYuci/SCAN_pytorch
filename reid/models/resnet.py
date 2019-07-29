@@ -33,7 +33,7 @@ class ResNet(nn.Module):
 
         self.base = ResNet.__factory[depth](pretrained=pretrained)
 
-        conv0 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False)
+        conv0 = nn.Conv2d(2, 64, kernel_size=7, stride=2, padding=3, bias=False)
         # init.kaiming_normal_(conv0.weight, mode='fan_out')
         init.kaiming_uniform_(conv0.weight, mode='fan_out')
         self.conv0 = conv0        
